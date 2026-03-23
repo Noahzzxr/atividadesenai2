@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão JS - Persistência de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Atividade de Revisão: JavaScript</h1>
+            <p>Conceitos de entrada, saída e persistência com <code>localStorage</code></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Cadastro de Alunos</h2>
+            <p class="description">Introdução ao armazenamento local: uma ponte para Banco de Dados.</p>
+            
+            <form id="dataForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail Acadêmico</label>
+                    <input type="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+                
+                <button type="submit" id="btnSave">Salvar Registro</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Registros Armazenados</h2>
+            <div id="dataDisplay" class="data-container">
+                <!-- Data will be dynamically inserted here -->
+                <p class="empty-msg">Nenhum registro encontrado localmente.</p>
+            </div>
+            <button id="btnClearAll" class="btn-secondary">Limpar Tudo</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Atividade Acadêmica de Desenvolvimento de Sistemas</p>
+            <p class="note">Nota: <code>localStorage</code> armazena dados no navegador, simulando persistência básica.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
